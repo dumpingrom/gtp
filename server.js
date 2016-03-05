@@ -12,10 +12,10 @@ app.use(bodyParser.json());
 var port = process.env.PORT || 8080;
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/testrestapi');
+mongoose.connect('mongodb://localhost/gtp');
 
 // models
-var Game = require('./app/models/game');
+var Game = require('./models/game');
 
 //////////// ROUTES
 var router = express.Router();
